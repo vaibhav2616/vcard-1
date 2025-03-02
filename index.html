@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vaibhav Rastogi | Backend Systems & AI Engineer</title>
+  <meta name="description" content="Portfolio of Vaibhav Rastogi - Backend Systems, SRE, Distributed Microservices, and Autonomous AI Agent Engineer.">
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #FALLING LEAVES CANVAS & AMBIENT MOTION
+  -->
+  <canvas id="leaves-canvas" class="leaves-canvas"></canvas>
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Vaibhav Rastogi" width="80">
+          <span class="avatar-status-badge" title="Open to Backend Systems & SRE opportunities">
+            <span class="status-pulse"></span>
+          </span>
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Vaibhav Rastogi">Vaibhav Rastogi</h1>
+
+          <p class="title">
+            <span class="dynamic-title" id="dynamic-title">Backend Systems Engineer</span><span class="typing-cursor">|</span>
+          </p>
+
+          <div class="leaves-control-wrap">
+            <button class="leaves-toggle-btn" id="leaves-toggle" title="Toggle Falling Leaves Animation">
+              <span class="leaf-icon">🍂</span> Leaves: <span id="leaves-status-text">ON</span>
+            </button>
+          </div>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:vaibhav.2327it1108@kiet.edu" class="contact-link" title="vaibhav.2327it1108@kiet.edu">vaibhav.2327it1108@kiet.edu</a>
+              <a href="mailto:rastogiv215@gmail.com" class="contact-link contact-sublink" title="rastogiv215@gmail.com">rastogiv215@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+917275059297" class="contact-link">+91 72750 59297</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Education</p>
+
+              <span class="contact-text">B.Tech IT (CGPA: 8.3)</span>
+              <span class="contact-subtext">KIET Group of Institutions</span>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="ribbon-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">GATE 2026</p>
+
+              <span class="contact-text">Qualified (Computer Science)</span>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Ghaziabad, Uttar Pradesh, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/vaibhav-rastogi-26asvr" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/vaibhav2616" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://leetcode.com/u/vaibhav123i" target="_blank" rel="noopener noreferrer" class="social-link" title="LeetCode Profile (vaibhav123i)">
+              <ion-icon name="code-slash-outline"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="mailto:vaibhav.2327it1108@kiet.edu" class="social-link" title="Send Email">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About Me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am a <strong>Backend Systems & AI Engineer</strong> passionate about building autonomous AI agent workflows, resilient event-driven architectures, and high-throughput distributed microservices. Currently pursuing a <strong>Bachelor of Technology in Information Technology</strong> at <strong>KIET Group of Institutions (AKTU)</strong> with an <strong>8.3 CGPA</strong>.
+          </p>
+
+          <p>
+            My engineering expertise centers on architecting clean, production-grade backends using <strong>Python, FastAPI, Django, Apache Kafka, Redis, PostgreSQL, and Docker</strong>. From diagnosing and resolving inventory state integrity at <strong>Organic Sabziwala</strong> to building an autonomous Site Reliability Engineering (SRE) pipeline that parses streaming error logs and automates Jira issue creation via <strong>CrewAI</strong> and the <strong>Model Context Protocol (MCP)</strong>, I engineer systems built for scale, fault tolerance, and concurrency.
+          </p>
+
+          <p>
+            I have also filed a patent for <strong>Saarthi</strong> (an AR/VR Cultural Heritage Platform showcased at Innotech 2024), qualified <strong>GATE 2026 in Computer Science</strong>, and earned certifications from <strong>AWS</strong> (Cloud & GenAI Practitioner) and <strong>Cisco</strong>.
+          </p>
+        </section>
+
+        <!--
+          - highlights stats
+        -->
+
+        <section class="quick-stats-section">
+          <ul class="stats-grid">
+            <li class="stat-card">
+              <span class="stat-number">8.3</span>
+              <p class="stat-label">B.Tech IT CGPA</p>
+              <p class="stat-sub">KIET Group of Institutions</p>
+            </li>
+            <li class="stat-card">
+              <span class="stat-number">GATE '26</span>
+              <p class="stat-label">Qualified CS</p>
+              <p class="stat-sub">Computer Science & IT</p>
+            </li>
+            <li class="stat-card">
+              <span class="stat-number">Patent</span>
+              <p class="stat-label">Saarthi AR/VR</p>
+              <p class="stat-sub">Innotech 2024 Showcase</p>
+            </li>
+            <li class="stat-card">
+              <span class="stat-number">4+</span>
+              <p class="stat-label">Certifications</p>
+              <p class="stat-sub">AWS & Cisco CCNA</p>
+            </li>
+          </ul>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm Doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Distributed backend icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Distributed Systems & Microservices</h4>
+
+                <p class="service-item-text">
+                  Architecting resilient backend microservices with FastAPI and Django. Implementing Transactional Outbox patterns, Redis distributed idempotency locks, and ACID-compliant transaction integrity.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="AI Agents icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Autonomous AI & Agentic SRE</h4>
+
+                <p class="service-item-text">
+                  Deploying multi-agent AI pipelines using CrewAI, Model Context Protocol (MCP) integrations for automated Jira triage, and low-latency LLM inference pipelines with the Gemini API.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="Event streaming icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Event Streaming & Asynchronous Queues</h4>
+
+                <p class="service-item-text">
+                  Engineering real-time telemetry and log-processing event buses with Apache Kafka, Celery worker nodes, structured JSON correlation logging, and RFC 7807 error standardization.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="Data & ML icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Machine Learning & Analytics Pipelines</h4>
+
+                <p class="service-item-text">
+                  Building predictive ML regression models (R²=0.87), asynchronous inference endpoints, and rich data analytics visualization suites in Power BI, Tableau, and Streamlit.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials / recommendations
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Engineering Highlights & Endorsements</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Organic Sabziwala" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Organic Sabziwala (B2B + B2C)</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Backend Systems Intern: Diagnosed and resolved inventory inconsistencies (negative stock, unit mismatch) by restructuring backend data flows and validation logic. Optimized system interactions by redesigning request/response handling, improving reliability of order processing and stock synchronization.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Saarthi Innotech 2024" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Saarthi AR/VR Platform (Patent Filed)</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Collaborated and led a 4-member multidisciplinary engineering team to design, prototype, and patent an AR/VR cultural heritage platform. Showcased the interactive platform at Innotech 2024, competing alongside top innovations across colleges and institutions.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="AI-Driven SRE Pipeline" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>AI-Driven SRE & Automated Triage</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Autonomous Site Reliability Engineering pipeline that consumes streaming error logs via Apache Kafka, analyzes anomalies with CrewAI multi-agent swarms, and leverages the Model Context Protocol (MCP) to automatically generate and assign structured Jira bug tickets.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Academics & GATE" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Academic Excellence & GATE 2026</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Maintained an 8.3 CGPA in Information Technology at KIET Group of Institutions while successfully qualifying the national GATE 2026 examination in Computer Science. Demonstrated mastery of Algorithms, Operating Systems, DBMS, and Distributed Architectures.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Highlight details" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Engineering Highlight</h4>
+
+              <time datetime="2026-05-01">2024 — 2026 Milestone</time>
+
+              <div data-modal-text>
+                <p>
+                  Detailed overview of engineering contributions, technical architecture, and impact.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - tech stack & affiliations
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Core Ecosystem & Affiliations</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <div class="ecosystem-badge-box" title="KIET Group of Institutions (AKTU)">
+                <img src="./assets/images/logo-1-color.png" alt="KIET Group of Institutions logo">
+                <span class="ecosystem-label">KIET Group</span>
+              </div>
+            </li>
+
+            <li class="clients-item">
+              <div class="ecosystem-badge-box" title="Organic Sabziwala">
+                <img src="./assets/images/logo-2-color.png" alt="Organic Sabziwala logo">
+                <span class="ecosystem-label">Organic Sabziwala</span>
+              </div>
+            </li>
+
+            <li class="clients-item">
+              <div class="ecosystem-badge-box" title="Amazon Web Services (AWS Certified)">
+                <img src="./assets/images/logo-3-color.png" alt="AWS Certified logo">
+                <span class="ecosystem-label">AWS Certified</span>
+              </div>
+            </li>
+
+            <li class="clients-item">
+              <div class="ecosystem-badge-box" title="Cisco Networking (CCNA)">
+                <img src="./assets/images/logo-4-color.png" alt="Cisco logo">
+                <span class="ecosystem-label">Cisco CCNA</span>
+              </div>
+            </li>
+
+            <li class="clients-item">
+              <div class="ecosystem-badge-box" title="Apache Kafka">
+                <img src="./assets/images/logo-5-color.png" alt="Apache Kafka logo">
+                <span class="ecosystem-label">Apache Kafka</span>
+              </div>
+            </li>
+
+            <li class="clients-item">
+              <div class="ecosystem-badge-box" title="Docker Containerization">
+                <img src="./assets/images/logo-6-color.png" alt="Docker logo">
+                <span class="ecosystem-label">Docker</span>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <!--
+          - Experience
+        -->
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Backend Systems Intern</h4>
+              <span class="timeline-company">Organic Sabziwala (B2B + B2C Grocery Platform)</span>
+              <span>Dec 2025 — May 2026</span>
+
+              <p class="timeline-text">
+                • <strong>Data Integrity & System Logic:</strong> Diagnosed and resolved inventory inconsistencies (negative stock, unit mismatch) by restructuring backend data flows and validation logic.<br>
+                • <strong>Backend Architecture & Integration:</strong> Optimized system interactions by redesigning request/response handling, improving reliability of order processing and stock synchronization across multi-channel B2B and B2C sales.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+
+        <!--
+          - Education
+        -->
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Bachelor of Technology in Information Technology</h4>
+              <span class="timeline-company">KIET Group of Institutions, AKTU | Ghaziabad, India</span>
+              <span>2023 — 2027</span>
+
+              <p class="timeline-text">
+                <strong>Academic Standing: CGPA: 8.3</strong><br>
+                Focusing on Distributed Computing, Data Structures & Algorithms, Operating Systems, Database Management Systems, Computer Networks, and System Design.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Senior Secondary Education (Class XII)</h4>
+              <span class="timeline-company">St. Anthony’s School, CBSE | Barabanki, Uttar Pradesh</span>
+              <span>2021 — 2022</span>
+
+              <p class="timeline-text">
+                <strong>Result: 85%</strong><br>
+                Completed CBSE Class XII with strong foundations in Mathematics, Physics, Chemistry, and Computer Science fundamentals.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+
+        <!--
+          - Achievements & Honors
+        -->
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="trophy-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Achievements & Honors</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Patent Filed | Saarthi — AR/VR Based Cultural Heritage Platform</h4>
+              <span>Dec 2024</span>
+
+              <p class="timeline-text">
+                Collaborated and led a 4-member team to design and develop an AR/VR-based cultural heritage platform. Showcased the project at Innotech 2024, competing alongside projects from multiple colleges and universities.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Qualified GATE 2026 (Computer Science & Information Technology)</h4>
+              <span>2026</span>
+
+              <p class="timeline-text">
+                Successfully qualified the national Graduate Aptitude Test in Engineering in Computer Science, demonstrating competitive proficiency in core algorithms, system architecture, and computational theory.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+
+        <!--
+          - Certifications
+        -->
+
+        <section class="certifications-section">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="shield-checkmark-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Certifications</h3>
+          </div>
+
+          <ul class="cert-grid">
+
+            <li class="cert-card">
+              <div class="cert-icon-wrapper">
+                <ion-icon name="cloud-outline"></ion-icon>
+              </div>
+              <div class="cert-content">
+                <h5 class="h5 cert-title">AWS Cloud Practitioner</h5>
+                <p class="cert-issuer">Amazon Web Services</p>
+                <span class="cert-date">Jan 2026</span>
+              </div>
+            </li>
+
+            <li class="cert-card">
+              <div class="cert-icon-wrapper">
+                <ion-icon name="sparkles-outline"></ion-icon>
+              </div>
+              <div class="cert-content">
+                <h5 class="h5 cert-title">AWS GenAI Practitioner</h5>
+                <p class="cert-issuer">Amazon Web Services</p>
+                <span class="cert-date">Jan 2026</span>
+              </div>
+            </li>
+
+            <li class="cert-card">
+              <div class="cert-icon-wrapper">
+                <ion-icon name="git-network-outline"></ion-icon>
+              </div>
+              <div class="cert-content">
+                <h5 class="h5 cert-title">Cisco Networking Essentials (CCNA)</h5>
+                <p class="cert-issuer">Cisco Networking Academy</p>
+                <span class="cert-date">Apr 2026</span>
+              </div>
+            </li>
+
+            <li class="cert-card">
+              <div class="cert-icon-wrapper">
+                <ion-icon name="hardware-chip-outline"></ion-icon>
+              </div>
+              <div class="cert-content">
+                <h5 class="h5 cert-title">Introduction to Modern AI (CCNA)</h5>
+                <p class="cert-issuer">Cisco Networking Academy</p>
+                <span class="cert-date">May 2026</span>
+              </div>
+            </li>
+
+            <li class="cert-card">
+              <div class="cert-icon-wrapper">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+              </div>
+              <div class="cert-content">
+                <h5 class="h5 cert-title">Palo Alto Cybersecurity Foundation</h5>
+                <p class="cert-issuer">Palo Alto Networks</p>
+                <span class="cert-date">May 2025</span>
+              </div>
+            </li>
+
+            <li class="cert-card">
+              <div class="cert-icon-wrapper">
+                <ion-icon name="terminal-outline"></ion-icon>
+              </div>
+              <div class="cert-content">
+                <h5 class="h5 cert-title">Linux OS Fundamentals</h5>
+                <p class="cert-issuer">Open Source Academy</p>
+                <span class="cert-date">May 2025</span>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - Skills
+        -->
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Technical Expertise</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python & Microservices (FastAPI, Django, SQLAlchemy)</h5>
+                <data value="95">95%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Distributed Systems & Event Streaming (Apache Kafka, Celery)</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Databases & Caching (PostgreSQL, Redis, Outbox Pattern)</h5>
+                <data value="92">92%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 92%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Autonomous AI & Agentic Frameworks (CrewAI, MCP, Gemini API)</h5>
+                <data value="88">88%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 88%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Cloud & Containerization (Docker, AWS, Linux, CI/CD)</h5>
+                <data value="86">86%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 86%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Data Analytics & Visualization (Power BI, Tableau, Pandas, Streamlit)</h5>
+                <data value="82">82%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 82%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Backend & Distributed</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>AI & Automation</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Data & Analytics</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Patents & Research</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Backend & Distributed</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>AI & Automation</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Data & Analytics</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Patents & Research</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <!-- 1. AI-Driven SRE & Automated Triage System -->
+            <li class="project-item active" data-filter-item data-category="ai & automation" data-project-id="sre-triage">
+              <a href="javascript:void(0)" class="project-card-link">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="AI-Driven SRE & Automated Triage System" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">AI-Driven SRE & Automated Triage System</h3>
+
+                <p class="project-category">AI & Automation</p>
+                <div class="project-tags">
+                  <span>Python</span><span>CrewAI</span><span>Kafka</span><span>MCP</span><span>Docker</span>
+                </div>
+
+              </a>
+            </li>
+
+            <!-- 2. Distributed Payment Processing Engine -->
+            <li class="project-item active" data-filter-item data-category="backend & distributed" data-project-id="payment-engine">
+              <a href="javascript:void(0)" class="project-card-link">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="Distributed Payment Processing Engine" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Distributed Payment Processing Engine</h3>
+
+                <p class="project-category">Backend & Distributed</p>
+                <div class="project-tags">
+                  <span>Django</span><span>PostgreSQL</span><span>Kafka</span><span>FastAPI</span>
+                </div>
+
+              </a>
+            </li>
+
+            <!-- 3. Enterprise Microservice Infra Chassis -->
+            <li class="project-item active" data-filter-item data-category="backend & distributed" data-project-id="infra-chassis">
+              <a href="javascript:void(0)" class="project-card-link">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="Enterprise Microservice Infra Chassis" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Enterprise Microservice Infra Chassis</h3>
+
+                <p class="project-category">Backend & Distributed</p>
+                <div class="project-tags">
+                  <span>FastAPI</span><span>SQLAlchemy</span><span>Redis</span><span>Transactional Outbox</span>
+                </div>
+
+              </a>
+            </li>
+
+            <!-- 4. AI Log Analyzer & Jira Automation System -->
+            <li class="project-item active" data-filter-item data-category="ai & automation" data-project-id="log-analyzer">
+              <a href="javascript:void(0)" class="project-card-link">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="AI Log Analyzer & Jira Automation" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">AI Log Analyzer & Jira Automation</h3>
+
+                <p class="project-category">AI & Automation</p>
+                <div class="project-tags">
+                  <span>FastAPI</span><span>Celery</span><span>CrewAI</span><span>MCP</span><span>Elasticsearch</span>
+                </div>
+
+              </a>
+            </li>
+
+            <!-- 5. Pizza Delivery Production RESTful API -->
+            <li class="project-item active" data-filter-item data-category="backend & distributed" data-project-id="pizza-api">
+              <a href="javascript:void(0)" class="project-card-link">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="Pizza Delivery Production RESTful API" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Pizza Delivery RESTful API</h3>
+
+                <p class="project-category">Backend & Distributed</p>
+                <div class="project-tags">
+                  <span>FastAPI</span><span>PostgreSQL</span><span>SQLAlchemy</span><span>JWT</span><span>Pytest</span>
+                </div>
+
+              </a>
+            </li>
+
+            <!-- 6. ReplyMate - AI Chatbot Automation -->
+            <li class="project-item active" data-filter-item data-category="ai & automation" data-project-id="replymate">
+              <a href="javascript:void(0)" class="project-card-link">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="ReplyMate - AI Chatbot Automation" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">ReplyMate – AI Chatbot Automation</h3>
+
+                <p class="project-category">AI & Automation</p>
+                <div class="project-tags">
+                  <span>Python</span><span>OCR</span><span>NLP</span><span>Gemini API</span>
+                </div>
+
+              </a>
+            </li>
+
+            <!-- 7. Insurance Premium Prediction -->
+            <li class="project-item active" data-filter-item data-category="data & analytics" data-project-id="insurance-ml">
+              <a href="javascript:void(0)" class="project-card-link">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="Insurance Premium Prediction" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Insurance Premium Prediction (R²=0.87)</h3>
+
+                <p class="project-category">Data & Analytics</p>
+                <div class="project-tags">
+                  <span>Python</span><span>ML Regression</span><span>FastAPI</span><span>Streamlit</span>
+                </div>
+
+              </a>
+            </li>
+
+            <!-- 8. Hotel Booking Cancellation Analysis -->
+            <li class="project-item active" data-filter-item data-category="data & analytics" data-project-id="hotel-cancellation">
+              <a href="javascript:void(0)" class="project-card-link">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="Hotel Booking Cancellation Analysis" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Hotel Booking Cancellation Analysis</h3>
+
+                <p class="project-category">Data & Analytics</p>
+                <div class="project-tags">
+                  <span>Python</span><span>Power BI</span><span>SQL</span><span>EDA</span>
+                </div>
+
+              </a>
+            </li>
+
+            <!-- 9. Heart Disease Predictive Analytics -->
+            <li class="project-item active" data-filter-item data-category="data & analytics" data-project-id="heart-analytics">
+              <a href="javascript:void(0)" class="project-card-link">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="Heart Disease Predictive Analytics" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Heart Disease Diagnostic Analytics</h3>
+
+                <p class="project-category">Data & Analytics</p>
+                <div class="project-tags">
+                  <span>Python</span><span>Tableau</span><span>Pandas</span><span>Clinical Data</span>
+                </div>
+
+              </a>
+            </li>
+
+            <!-- 10. Saarthi - AR/VR Cultural Heritage Platform (Patent Filed) -->
+            <li class="project-item active" data-filter-item data-category="patents & research" data-project-id="saarthi-patent">
+              <a href="javascript:void(0)" class="project-card-link">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="Saarthi AR/VR Platform" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Saarthi – AR/VR Cultural Platform (Patent Filed)</h3>
+
+                <p class="project-category">Patents & Research</p>
+                <div class="project-tags">
+                  <span>Patent Filed</span><span>AR/VR</span><span>Innotech 2024</span><span>Team Lead</span>
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!--
+        - #PROJECT DETAILS MODAL
+      -->
+
+      <div class="project-modal-container" data-project-modal-container>
+
+        <div class="overlay" data-project-overlay></div>
+
+        <section class="project-modal">
+
+          <button class="modal-close-btn" data-project-modal-close-btn aria-label="Close project details">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="project-modal-header">
+            <span class="project-modal-category" data-project-modal-category>Category</span>
+            <span class="project-modal-date" data-project-modal-date>Date</span>
+          </div>
+
+          <h3 class="h3 project-modal-title" data-project-modal-title>Project Title</h3>
+
+          <div class="project-modal-tags" data-project-modal-tags>
+            <!-- dynamically populated tags -->
+          </div>
+
+          <div class="project-modal-body">
+            <ul class="project-modal-bullets" data-project-modal-bullets>
+              <!-- dynamically populated bullets -->
+            </ul>
+          </div>
+
+          <div class="project-modal-footer">
+            <button class="form-btn project-modal-dismiss-btn" data-project-modal-dismiss>
+              <span>Close Overview</span>
+            </button>
+          </div>
+
+        </section>
+
+      </div>
+
+
+
+
+
+      <!--
+        - #BLOG (Articles & Technical Writing)
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Technical Articles & Insights</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="javascript:void(0)">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Transactional Outbox Pattern" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Distributed Systems</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2026-06-15">Jun 15, 2026</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Eliminating Dual-Write Hazards with the Transactional Outbox Pattern</h3>
+
+                  <p class="blog-text">
+                    How an atomic outbox table paired with a background relay worker guarantees at-least-once Kafka event delivery in FastAPI & PostgreSQL microservices.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="javascript:void(0)">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Autonomous AI SRE" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">AI Engineering</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2026-09-02">Sep 02, 2026</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Autonomous SRE: Multi-Agent Triage with CrewAI & Model Context Protocol</h3>
+
+                  <p class="blog-text">
+                    Architecting multi-agent AI pipelines that digest streaming Kafka error logs, categorize transaction failures, and auto-dispatch structured Jira tickets using MCP.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="javascript:void(0)">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="High-concurrency Redis idempotency" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Backend Security</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2026-07-20">Jul 20, 2026</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">High-Concurrency Safety with Redis Distributed Idempotency Locking</h3>
+
+                  <p class="blog-text">
+                    Preventing duplicate state mutations in financial transaction APIs with Redis-backed distributed keys, correlation IDs, and RFC 7807 error standardization.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="javascript:void(0)">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="Qualifying GATE 2026" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Academics & Strategy</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2026-03-10">Mar 10, 2026</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">My Roadmap to Qualifying GATE 2026 in Computer Science</h3>
+
+                  <p class="blog-text">
+                    Core strategies for mastering Operating Systems, Computer Networks, DBMS, and Algorithms while balancing practical software engineering internships.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="javascript:void(0)">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="FastAPI vs Django microservices" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Architecture</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2026-08-11">Aug 11, 2026</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Dual-Layer Backend: Combining FastAPI Gateway with Django's ACID Core</h3>
+
+                  <p class="blog-text">
+                    Isolating heavy synchronous transaction logic within Django ORM while offloading high-concurrency client polling and webhooks to FastAPI.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="javascript:void(0)">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Saarthi patent journey" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Innovation & Patents</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-12-28">Dec 28, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">From Concept to Patent: Leading Saarthi AR/VR at Innotech 2024</h3>
+
+                  <p class="blog-text">
+                    Leadership takeaways from guiding a 4-member team to design, prototype, and file an official intellectual property patent for cultural heritage preservation.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111985.45209701416!2d77.34862594680879!3d28.692342533036573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf1bb41c50fdf%3A0xe6f06fd26a7798ba!2sGhaziabad%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1715000000000!5m2!1sen!2sin"
+              width="400" height="300" loading="lazy" title="Location: Ghaziabad, Uttar Pradesh, India"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Get in Touch</h3>
+
+          <form action="#" class="form" data-form id="contact-form">
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Your full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Your email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your message or project inquiry..." required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!--
+    - #TOAST NOTIFICATION
+  -->
+  <div class="toast-notification" id="toast-notification" role="alert" aria-live="assertive">
+    <div class="toast-icon">
+      <ion-icon name="checkmark-circle"></ion-icon>
+    </div>
+    <div class="toast-body">
+      <h5 class="toast-title">Message Sent!</h5>
+      <p class="toast-message">Thank you! Vaibhav will get back to you shortly.</p>
+    </div>
+  </div>
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
