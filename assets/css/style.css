@@ -1885,18 +1885,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 /*-----------------------------------*\
-  #FALLING LEAVES, AMBIENT GLOW & MOVING ANIMATIONS
+  #AMBIENT GLOW & MOVING ANIMATIONS
 \*-----------------------------------*/
-
-.leaves-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;
-  z-index: 9999;
-}
 
 .ambient-glow {
   position: fixed;
@@ -1988,44 +1978,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 @keyframes blinkCursor {
   0%, 50% { opacity: 1; }
   51%, 100% { opacity: 0; }
-}
-
-/* Leaves Control Button */
-.leaves-control-wrap {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-}
-
-.leaves-toggle-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: var(--border-gradient-onyx);
-  border: 1px solid var(--jet);
-  padding: 4px 12px;
-  border-radius: 20px;
-  font-size: var(--fs-8);
-  color: var(--orange-yellow-crayola);
-  cursor: pointer;
-  transition: var(--transition-1);
-  box-shadow: var(--shadow-1);
-}
-
-.leaves-toggle-btn:hover {
-  background: var(--bg-gradient-yellow-1);
-  color: var(--smoky-black);
-  transform: translateY(-2px);
-}
-
-.leaves-toggle-btn .leaf-icon {
-  display: inline-block;
-  animation: leafFlutter 2.5s ease-in-out infinite alternate;
-}
-
-@keyframes leafFlutter {
-  0% { transform: rotate(-10deg) scale(1); }
-  100% { transform: rotate(15deg) scale(1.15); }
 }
 
 /* Contact Info Sublink & Text */
